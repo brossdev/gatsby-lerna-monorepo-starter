@@ -15,9 +15,7 @@
     "serve": "^10.0.0",
     "styled-components": "^3.3.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -34,5 +32,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  }
+  },
+  "private": true,
+  "workspaces": ["packages/*"]
 }
