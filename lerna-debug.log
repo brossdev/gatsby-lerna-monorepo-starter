@@ -1,0 +1,6 @@
+0 silly argv { _: [ 'clean' ], lernaVersion: '3.18.3', '$0': 'lerna' }
+1 notice cli v3.18.3
+2 verbose rootPath /Users/bobbyross/Projects/gatsby/lerna-monorepo-starter
+3 error JSONError: Unexpected end of JSON input while parsing near '' in packages/shop/package.json
+3 error     at module.exports (/Users/bobbyross/.nvm/versions/node/v10.15.3/lib/node_modules/lerna/node_modules/parse-json/index.js:26:19)
+3 error     at parse (/Users/bobbyross/.nvm/versions/node/v10.15.3/lib/node_modules/lerna/node_modules/load-json-file/index.js:15:9)

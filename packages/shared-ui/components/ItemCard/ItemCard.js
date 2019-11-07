@@ -12,7 +12,7 @@ const Card = styled.div`
   margin: 1%;
   padding: 5px;
   cursor: pointer;
-  transition: all 150ms ease-in
+  transition: all 150ms ease-in;
   width: 30%;
   
   &:hover {
