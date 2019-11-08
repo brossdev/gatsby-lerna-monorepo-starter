@@ -20,7 +20,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "test": "jest test --config ./json-config.json"
+    "test": "jest test --config ./json-config.json",
+    "run:blog": "cd packages/blog && yarn develop",
+    "run:shop": "cd packages/shop && yarn develop",
+    "run:all": "npm-run-all --parallel run:blog run:shop"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.0.0-rc.1",
