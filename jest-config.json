@@ -1,16 +1,17 @@
 {
   "transform": {
-    ".(js|jsx)": "babel-jest"
+    "^.+\\.jsx?$": "<rootDir>/jest-setup.js"
   },
   "moduleNameMapper": {
-    "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+    ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/styleMock.js"
   },
-  "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
-  "testPathIgnorePatterns": [
-    "/node_modules/",
-    "/.cache/"
-  ],
-  "setupFiles": [
-    "./jest-setup.js"
-  ]
+  "testPathIgnorePatterns": ["node_modules", ".cache", "public"],
+  "transformIgnorePatterns": ["node_modules/(?!(gatsby)/)"],
+  "globals": {
+    "__PATH_PREFIX__": ""
+  },
+  "testURL": "http://localhost",
+  "setupFiles": ["<rootDir>/loadershim.js"],
+  "setupFilesAfterEnv": ["<rootDir>/setup-test-env.js"]
 }

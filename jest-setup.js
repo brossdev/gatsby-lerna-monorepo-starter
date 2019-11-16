@@ -1,4 +1,5 @@
-const enzyme = require('enzyme');
-const Adapter = require('enzyme-adapter-react-16');
 
-enzyme.configure({ adapter: new Adapter() });
+const babelOptions = {
+  presets: ["babel-preset-gatsby"],
+}
+module.exports = require("babel-jest").createTransformer(babelOptions)
