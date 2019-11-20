@@ -4,15 +4,16 @@
   "version": "1.0.0",
   "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby": "^2.17.11",
+    "gatsby-link": "^2.2.24",
+    "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-react-next": "^1.0.11",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-json": "^1.0.20",
-    "react": "16.0.0",
-    "react-helmet": "^5.2.0",
+    "gatsby-source-filesystem": "^2.1.36",
+    "gatsby-transformer-json": "^2.2.18",
+    "react": "^16.11.0",
+    "react-helmet": "^5.2.1",
     "serve": "^10.0.0",
+    "npm-run-all": "^4.1.5",
     "styled-components": "^3.3.3"
   },
   "keywords": [
@@ -22,19 +23,15 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "test": "jest test --config ./json-config.json",
+    "test": "jest test",
+    "run:news": "cd packages/news && yarn develop",
     "run:blog": "cd packages/blog && yarn develop",
     "run:shop": "cd packages/shop && yarn develop",
-    "run:all": "npm-run-all --parallel run:blog run:shop"
+    "run:all": "npm-run-all --parallel run:news run:shop run:blog"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.0.0-rc.1",
-    "@babel/preset-react": "^7.0.0-rc.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
-    "babel-jest": "^24.9.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.2.0",
     "jest": "^24.9.0"
   },
   "repository": {
