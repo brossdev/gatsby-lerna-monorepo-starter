@@ -8,10 +8,10 @@ install:
   - lerna bootstrap
 matrix:
   include:
-    - name: 'Blog Pipeline'
-      env: PACKAGE_LOCATION=packages/blog PACKAGE_NAME=lerna-monorepo-blog
-    - name: 'Shop Pipeline'
-      env: PACKAGE_LOCATION=packages/shop PACKAGE_NAME=lerna-monorepo-shop
+    # - name: 'Blog Pipeline'
+    #   env: PACKAGE_LOCATION=packages/blog PACKAGE_NAME=lerna-monorepo-blog
+    # - name: 'Shop Pipeline'
+    #   env: PACKAGE_LOCATION=packages/shop PACKAGE_NAME=lerna-monorepo-shop
     - name: 'News Pipeline'
       env: PACKAGE_LOCATION=packages/news PACKAGE_NAME=lerna-monorepo-news
 script:
