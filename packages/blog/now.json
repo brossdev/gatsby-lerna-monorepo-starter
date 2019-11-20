@@ -1,0 +1,9 @@
+{
+  "type": "static",
+  "alias": "lerna-monorepo-blog",
+  "static": {
+    "public": "public"
+  },
+  "public": true,
+  "version": 1
+}
